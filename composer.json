@@ -4,6 +4,11 @@
             "php": "7.0.22"
         }
     },
+    "autoload": {
+      "psr-4": {
+        "GovUkBlogs\\": "app/"
+      }
+    },
     "require": {
         "dxw/roots-composer": "dev-master#2fad80195fc15bd48329f398d256fcfd013ca0d5",
         "mustache/mustache": "2.5.1",
@@ -15,6 +20,10 @@
     },
     "require-dev": {
         "dxw/phar-install": "^1.0",
-        "friendsofphp/php-cs-fixer": "^2.15"
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "peridot-php/peridot": "^1.19",
+        "peridot-php/peridot-dot-reporter": "^1.0",
+        "peridot-php/leo": "^1.6",
+        "php-mock/php-mock-mockery": "^1.3"
     }
 }
