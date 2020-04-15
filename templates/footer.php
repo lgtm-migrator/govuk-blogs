@@ -1,4 +1,3 @@
-
   <ul id="menu-footer" class="govuk-footer__inline-list">
     <li class="govuk-footer__inline-list-item menu-all-government-blogs"><a class="govuk-footer__link" href="https://www.blog.gov.uk">All GOV.UK blogs</a></li>
     <li class="govuk-footer__inline-list-item menu-all-government-blog-posts"><a class="govuk-footer__link" href="https://www.blog.gov.uk/all-posts/">All GOV.UK blog posts</a></li>
