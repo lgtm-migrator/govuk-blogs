@@ -4,7 +4,7 @@
       <p><?php echo esc_html(get_permalink()) ?></p>
     </div>
     <header>
-      <h1 class="entry-title"><?php the_title() ?></h1>
+      <h1 class="entry-title govuk-heading-xl"><?php the_title() ?></h1>
       <?php get_template_part('templates/entry-meta') ?>
     </header>
     <div class="entry-content">
