@@ -1,3 +1,43 @@
+h1 {
+  margin-top: 1.25em;
+  margin-bottom: 0.625em;
+  @media (max-width: $mobileMaxWidth) {
+    margin-top: 0.46875em;
+    margin-bottom: 0.9375em;
+  }
+}
+
+h2 {
+  margin-top: 1.25em;
+  margin-bottom: 0.5555555556em;
+  @media (max-width: $mobileMaxWidth) {
+    margin-top: 1.0416666667em;
+    margin-bottom: 0.4166666667em;
+  }
+}
+
+h3 {
+  margin-top: 1.875em;
+  margin-bottom: 0.8333333333em;
+  @media (max-width: $mobileMaxWidth) {
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+  }
+}
+
+h4 {
+  margin-top: 1.0526315789em;
+  margin-bottom: 0.3125em;
+  @media (max-width: $mobileMaxWidth) {
+    margin-top: 0.625em;
+  }
+}
+
+h5, h6 {
+  margin-top: 0.2631578947em;
+  margin-bottom: 1.0526315789em;
+}
+
 
 blockquote {
   margin: 0 0 $gutter 0;
