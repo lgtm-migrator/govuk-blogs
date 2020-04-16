@@ -82,8 +82,7 @@ article {
   header {
 
     .byline {
-      @include font-size(16px, 16px);
-      @include line-height(20 / 16, 20 / 16);
+      @include govuk-font(16);
       margin-bottom: $gutterHalf;
     }
 
@@ -97,8 +96,7 @@ article {
   }
 
   footer {
-    @include font-size(16px, 16px);
-    @include line-height(20 / 16, 20 / 16);
+    @include govuk-font(16);
 
     &.single {
       margin-top: $gutter;
@@ -119,8 +117,7 @@ article {
     li {
       list-style: none;
       display: inline-block;
-      @include font-size(16px, 16px);
-      @include line-height(20 / 16, 20 / 16);
+      @include govuk-font(16);
 
       .lte-ie8 & {
         float: left;
@@ -361,8 +358,7 @@ table td small {
       list-style: none;
       margin-top: $spacingSmall * 2;
       padding-left: 0;
-      @include font-size(16px, 16px);
-      @include line-height(20 / 16, 20 / 16);
+      @include govuk-font(16);
 
       &:first-child {
         margin-top: 0.25em;
@@ -495,8 +491,7 @@ sup {
     }
     a {
       @include icons;
-      @include font-size(16px, 16px);
-      @include line-height(20 / 16, 20 / 16);
+      @include govuk-font(16);
 
       &.twitter {
         @include icon-twitter;
