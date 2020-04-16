@@ -95,7 +95,7 @@ article {
     color: $greyText;
   }
 
-  footer {
+  .footer {
     @include govuk-font(16);
 
     &.single {
@@ -228,7 +228,7 @@ img {
   &.alignright,
   &.alignleft,
   &.aligncenter,
-   {
+  {
     border: solid 1px $borderColour;
   }
 }
@@ -350,18 +350,7 @@ table td small {
   padding-top: $gutterHalf;
 
   ul {
-    margin: 0;
-
     li {
-      list-style: none;
-      margin-top: $spacingSmall * 2;
-      padding-left: 0;
-      @include govuk-font(16);
-
-      &:first-child {
-        margin-top: 0.25em;
-      }
-
       .number {
         padding-right: $spacingSmall;
         font-weight: bold;
@@ -539,22 +528,11 @@ sup {
   }
 }
 
-footer.single div.related-posts {
+.footer.single div.related-posts {
   background: #e1e8e8;
   padding: $gutterHalf $gutter;
-  @include govuk-font(19);
-
-  p {
-    margin: 0 0 $spacingSmall * 2 0;
-  }
-
   ul {
-    margin-top: 0;
     margin-bottom: 0;
-
-    li {
-      margin-bottom: 0;
-    }
   }
 }
 
