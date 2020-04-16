@@ -11,29 +11,25 @@ body {
   color: $black;
 }
 
-p {
-  margin: $spacingSmall 0 $gutter 0;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
 h1 {
-  @include govuk-font(48, $weight: bold);
+  @extend %govuk-heading-xl;
 }
 
 h2{
-  @include govuk-font(36);
+  @extend %govuk-heading-l;
 }
 
 h3 {
-  @include govuk-font(24);
+  @extend %govuk-heading-m;
 }
 
 h4  {
-  @include govuk-font(19);
+  @extend %govuk-heading-s;
 }
 
 h5, h6 {
