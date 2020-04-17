@@ -1,8 +1,8 @@
 .hallo-editor {
-  @import "common/variables";
-  @import "common/mixins";
-  @import "common/common";
-  @extend .entry-content;
+  // @import "common/variables";
+  // @import "common/mixins";
+  // @import "common/common";
+  @extend .entry-content !optional;
 
   a {
     text-decoration: underline;
