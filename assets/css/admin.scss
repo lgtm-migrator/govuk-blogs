@@ -1,8 +1,13 @@
+$govuk-compatibility-govuktemplate: true;
+$govuk-images-path: "../build/node_modules/govuk-frontend/govuk/assets/images/";
+$govuk-fonts-path: "../build/node_modules/govuk-frontend/govuk/assets/fonts/";
+@import "govuk-frontend/govuk/all";
+
 .hallo-editor {
-  // @import "common/variables";
-  // @import "common/mixins";
-  // @import "common/common";
-  @extend .entry-content !optional;
+  @import "common/variables";
+  @import "common/mixins";
+  @import "common/common";
+  @extend .entry-content;
 
   a {
     text-decoration: underline;
