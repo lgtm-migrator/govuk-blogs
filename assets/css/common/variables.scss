@@ -1,3 +1,10 @@
+// Use compatibility mode for govuktemplate
+// But use modern colour palette
+// -------------------------
+
+$govuk-compatibility-govuktemplate: true;
+$govuk-use-legacy-palette: false;
+
 // Spacing
 // -------------------------
 
