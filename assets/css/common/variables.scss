@@ -5,6 +5,18 @@
 $govuk-compatibility-govuktemplate: true;
 $govuk-use-legacy-palette: false;
 
+// Extra colours
+// -------------------------
+
+// @use "sass:map";
+@debug "A";
+@debug $govuk-colours;
+$govuk-colours: map-merge($govuk-colours, (
+  "new-colour": #ffffff,
+));
+@debug "B";
+@debug $govuk-colours;
+
 // Spacing
 // -------------------------
 
