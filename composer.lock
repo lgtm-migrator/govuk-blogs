@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fa8240e7d87af5e89b7e76797c48e6d",
+    "content-hash": "dce614e7ea1711873d405f81a739cba2",
     "packages": [
         {
             "name": "aura/autoload",
@@ -170,39 +170,6 @@
             "description": "Result values",
             "homepage": "https://github.com/dxw/result",
             "time": "2019-07-18T16:52:47+00:00"
-        },
-        {
-            "name": "dxw/roots-composer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dxw/roots-composer.git",
-                "reference": "2fad80195fc15bd48329f398d256fcfd013ca0d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dxw/roots-composer/zipball/2fad80195fc15bd48329f398d256fcfd013ca0d5",
-                "reference": "2fad80195fc15bd48329f398d256fcfd013ca0d5",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "autoload.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Tom Adams",
-                    "email": "tom@dxw.com",
-                    "homepage": "http://dxw.com"
-                }
-            ],
-            "description": "Roots in a Composer module!",
-            "homepage": "https://github.com/dxw/roots-composer",
-            "abandoned": true,
-            "time": "2013-12-06T15:08:34+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -2035,14 +2002,13 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dxw/roots-composer": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.0.22"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
