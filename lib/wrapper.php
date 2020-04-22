@@ -8,10 +8,6 @@ function roots_template_path() {
   return Roots_Wrapping::$main_template;
 }
 
-function roots_sidebar_path() {
-  return new Roots_Wrapping('templates/sidebar.php');
-}
-
 class Roots_Wrapping {
   // Stores the full path to the main template file
   static $main_template;
