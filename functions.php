@@ -8,7 +8,6 @@ require(__DIR__.'/lib/init.php');
 require(__DIR__.'/lib/wrapper.php');
 require(__DIR__.'/lib/config.php');
 require(__DIR__.'/lib/activation.php');
-require(__DIR__.'/lib/titles.php');
 require(__DIR__.'/lib/cleanup.php');
 require(__DIR__.'/lib/nav.php');
 require(__DIR__.'/lib/comments.php');
