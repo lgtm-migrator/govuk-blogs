@@ -108,17 +108,17 @@ input{
 #commentform {
   input[type="submit"] {
     margin-top: 10px;
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       width: 100%;
     }
   }
   input[type="text"],
   input[type="email"],
   input[type="url"] {
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       width: 97%;
     }
-    @media (max-width: $mobileSmallWidth) {
+    @include govuk-media-query($until: mobile) {
       width: 96%;
     }
   }
@@ -176,14 +176,14 @@ input{
 .page-navigation {
   .previous, .next {
     width: 49%;
-    @media (max-width: $mobileSmallWidth) {
+    @include govuk-media-query($until: mobile) {
       width: 100%;
     }
   }
 
   .previous {
     margin-right: 2%;
-    @media (max-width: $mobileSmallWidth) {
+    @include govuk-media-query($until: mobile) {
       margin-right: 0;
       margin-bottom: $gutterHalf;
     }

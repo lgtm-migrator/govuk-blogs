@@ -15,7 +15,7 @@ $is-ie: false !default;
 @mixin font-size($d, $m) {
   font-size: $d;
 
-  @media (max-width:$mobileMaxWidth) {
+  @include govuk-media-query($until: tablet) {
     font-size: $m;
   }
 }
@@ -23,7 +23,7 @@ $is-ie: false !default;
 @mixin line-height($d, $m) {
   line-height: $d;
 
-  @media (max-width: $mobileMaxWidth) {
+  @include govuk-media-query($until: tablet) {
     line-height: $m;
   }
 }

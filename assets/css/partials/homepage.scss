@@ -7,11 +7,11 @@
     overflow: hidden;
     background: transparent;
 
-    @media (max-width: $tabletMaxWidth) {
+    @include govuk-media-query($until: desktop) {
       max-height: 144px;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       max-width: 100% !important;
       max-height: none;
       overflow: visible;
@@ -164,7 +164,7 @@ hr {
       margin-left: 3px;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       margin-top: 4px;
     }
   }

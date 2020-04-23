@@ -21,7 +21,7 @@
     display: inline-block;
     margin: 0 $spacingSmall*2;
 
-    @media (max-width: $mobileSmallWidth) {
+    @include govuk-media-query($until: mobile) {
       margin-top: $gutterHalf;
     }
 

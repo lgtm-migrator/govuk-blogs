@@ -40,7 +40,7 @@ article.featured {
     }
   }
   
-  @media (max-width: $tabletMaxWidth) {
+  @include govuk-media-query($until: desktop) {
 
     .image {
       width: 100%;

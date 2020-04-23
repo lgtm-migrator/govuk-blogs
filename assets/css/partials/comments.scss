@@ -32,7 +32,7 @@ form#commentform {
   input[type="email"] {
     width: 50%;
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       padding: 15px;
       width: 100%;
     }
@@ -49,7 +49,7 @@ form#commentform {
     width: 70%;
     float: left;
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       width: 100%;
       float: none;
     }
@@ -90,7 +90,7 @@ form#commentform {
       text-decoration: underline;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       width: 100%;
       float: none;
       margin-top: 0;
@@ -177,7 +177,7 @@ form#commentform {
         margin-left: 0;
       }
 
-      @media (max-width: $mobileMaxWidth) {
+      @include govuk-media-query($until: tablet) {
         display: block;
         margin-left: 0;
       }

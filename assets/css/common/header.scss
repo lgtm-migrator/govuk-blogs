@@ -16,7 +16,7 @@
     border-bottom: 1px solid transparent;
     line-height: 1.1;
 
-    @media screen and (max-width: $tabletMaxWidth) {
+    @include govuk-media-query($until: desktop) {
       margin: 0;
     }
 
@@ -34,7 +34,7 @@
 }
 
 .header-global {
-  @media screen and (max-width: $tabletMaxWidth) {
+  @include govuk-media-query($until: desktop) {
     margin-left: auto;
     margin-right: auto;
     width: auto;
@@ -85,7 +85,7 @@
     font-weight: normal;
     display: block;
 
-    @media screen and (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       padding-bottom: 6px;
     }
   }
@@ -101,11 +101,11 @@
   .blog-meta {
     padding-top: $spacingSmall * 2;
 
-    @media (max-width: $tabletMaxWidth) {
+    @include govuk-media-query($until: desktop) {
       padding-top: 0;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       margin-bottom: $gutterHalf;
     }
 
@@ -119,7 +119,7 @@
         overflow: hidden;
         padding: 0px;
         display: table-cell;
-        @media screen and (max-width: $tabletMaxWidth) {
+        @include govuk-media-query($until: desktop) {
           width: 105px;
         }
 
@@ -144,7 +144,7 @@
       float: right;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       float: none;
       display: inline-block;
     }
@@ -157,12 +157,12 @@
       margin-top: $spacingSmall;
     }
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       margin-top: $gutterHalf;
     }
   }
 
-  @media (max-width: $mobileMaxWidth) {
+  @include govuk-media-query($until: tablet) {
     .logo-container {
       float: none;
       margin-left: 0;
@@ -187,7 +187,7 @@
   color: $white;
   background: $govuk-link-colour;
 
-  @media screen and (min-width: $tabletMaxWidth) {
+  @include govuk-media-query($from: desktop) {
     margin: $gutter $gutterHalf;
     padding: $gutterHalf $gutter;
   }
@@ -201,7 +201,7 @@
     padding-bottom: 7px;
     @include govuk-font(24);
 
-    @media screen and (min-width: $tabletMaxWidth) {
+    @include govuk-media-query($from: desktop) {
       padding-top: 6px;
       padding-bottom: 9px;
       @include govuk-font(36);
@@ -214,7 +214,7 @@
     }
 
     span {
-      @media screen and (min-width: $tabletMaxWidth) {
+      @include govuk-media-query($from: desktop) {
         display: block;
       }
     }

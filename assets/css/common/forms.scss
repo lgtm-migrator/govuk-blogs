@@ -63,7 +63,7 @@ select {
   textarea {
     width: 622px;
 
-    @media (max-width: $mobileMaxWidth) {
+    @include govuk-media-query($until: tablet) {
       width: 100%;
     }
   }
@@ -85,7 +85,7 @@ label {
 .form-group {
   margin-bottom: $gutter;
 
-  @media (max-width: $mobileMaxWidth) {
+  @include govuk-media-query($until: tablet) {
     margin-bottom: $gutterHalf;
   }
 }
