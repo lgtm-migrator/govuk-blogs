@@ -3,7 +3,11 @@ $govuk-use-legacy-palette: false;
 
 $govuk-images-path: "../build/node_modules/govuk-frontend/govuk/assets/images/";
 $govuk-fonts-path: "../build/node_modules/govuk-frontend/govuk/assets/fonts/";
-
+$govuk-breakpoints: (
+  mobile:  370px,
+  tablet:  768px,
+  desktop: 980px
+);
 @import "govuk-frontend/govuk/all";
 
 @import "common/variables";
