@@ -2,7 +2,16 @@
 /* global jQuery: false */
 /* global cookie: false */
 
-window.GOVUKFrontend.initAll()
+require('./plugins/endswithpolyfill.js')
+require('./plugins/jquery.placeholder.js')
+require('jquery-placeholder')
+const bowser = require('bowser')
+require('url-polyfill')
+require('es6-promise/auto')
+const GOVUKFrontend = require('govuk-frontend')
+require('./comments.js')
+
+GOVUKFrontend.initAll()
 
 jQuery(function ($) {
     'use strict';

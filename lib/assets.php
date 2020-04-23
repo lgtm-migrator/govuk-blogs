@@ -5,6 +5,8 @@ add_action('init', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script('modernizr', get_template_directory_uri().'/assets/js/plugins/001_modernizr.min.js');
+    wp_enqueue_script('our-jquery', get_template_directory_uri().'/assets/js/plugins/002_jquery.min.js');
     wp_enqueue_script('main', get_template_directory_uri().'/build/main.min.js');
     wp_enqueue_style('main', get_template_directory_uri().'/build/main.min.css');
 });

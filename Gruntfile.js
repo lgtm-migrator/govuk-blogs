@@ -42,6 +42,18 @@ module.exports = function (grunt) {
             }
         },
 
+        browserify: {
+            options: {
+                browserifyOptions: {
+                    debug: true
+                }
+            },
+            production: {
+                files: {
+                    'build/main.min.js': 'assets/js/main.js'
+                }
+            }
+        },
         uglify: {
             dist: {
                 options: {
@@ -106,7 +118,7 @@ module.exports = function (grunt) {
     })
 
     grunt.loadNpmTasks('grunt-sass')
-    grunt.loadNpmTasks('grunt-contrib-uglify')
+    grunt.loadNpmTasks('grunt-browserify')
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-image')
@@ -151,7 +163,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'copy',
         'sass',
-        'uglify',
+        'browserify',
     ])
 
 }
