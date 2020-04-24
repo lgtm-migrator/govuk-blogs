@@ -180,4 +180,11 @@ jQuery(function ($) {
       // Return without calling preventDefault() thus allowing the navigation
       // to occur
     })
+  
+    // Function to move injected HTML of CIVIC cookie banner to top of page structure
+    var cookieBanner = jQuery("#ccc");
+    if (cookieBanner) {
+      // Move cookie banner to global-cookie-message
+      cookieBanner.prependTo("#global-cookie-message");
+    }
 })
